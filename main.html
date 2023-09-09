@@ -52,55 +52,58 @@
      <body class="bg"> 
          <center>              
              <div class="cen">
-                 6
+                 7
                  <h1>โปรแกรมคำนวณคะแนนเฉลี่ย</h1> 
-                 <table> 
-                     <T1> 
-                         <tr> 
-                             <th colspan="3">กรุณาใส่เกรด</th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 1.</th> 
-                              <th><input size="1" type="number" id="grade1" style="width: 50px;" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid1" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 2.</th> 
-                              <th><input size="1" type="number" id="grade2" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid2" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 3.</th> 
-                              <th><input size="1" type="number" id="grade3" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid3" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 4.</th> 
-                              <th><input size="1" type="number" id="grade4" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid4" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 5.</th> 
-                              <th><input size="1" type="number" id="grade5" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid5" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                         <tr> 
-                              <th style="width: 60px;">วิชาที่ 6.</th> 
-                              <th><input size="1" type="number" id="grade6" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th> 
-                              <th><input type="number" id="gid6" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th> 
-                         </tr> 
-                     </T1>
-                     <tr>
-                         <th colspan="3">
-                             <button onclick="summit()">เริ่มคำนวณ</button> 
-                         </th>
-                     </tr>
-                     <tr> 
-                         <th colspan="3"> 
-                                              เกรดเฉลี่ยที่ได้ :  <p id="demo"></p> 
-                         </th> 
-                     </tr> 
-                 </table> 
+                 <table>  
+                      <T1>  
+                          <tr>  
+                              <th colspan="3">กรุณาใส่เกรด</th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 1.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade1" style="width: 50px;" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid1" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 2.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade2" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid2" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 3.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade3" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid3" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 4.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade4" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid4" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 5.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade5" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid5" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                          <tr>  
+                               <th style="width: 60px;">วิชาที่ 6.</th>  
+                               <th style="width: 90px;"><input size="1" type="number" id="grade6" style="width: 50px;" step="0.1" min="0" max="4" placeholder="เกรด"></th>  
+                               <th style="width: 90px;"><input type="number" id="gid6" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="หน่วยกิต"></th>  
+                          </tr>  
+                      </T1> 
+                      <tr> 
+                          <th colspan="3"> 
+                              <button onclick="summit()">เริ่มคำนวณ</button>  
+                          </th> 
+                      </tr> 
+                      <tr>  
+                          <th colspan="2">  
+                              เกรดเฉลี่ยที่ได้ : 
+                          </th>
+                          <th>
+                              <p id="demo">GPA</p>  
+                          </th>  
+                      </tr>  
+                  </table>  
              </div>
          </center> 
          <script src="myjava.js"></script> 
