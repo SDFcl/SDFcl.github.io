@@ -17,16 +17,9 @@
                  background-repeat: no-repeat; 
                  background-size: cover; 
              } 
-  
-             /*table { 
-                 border: 1px solid #ff0000; 
-                 border-radius 20px 
-                 position: absolute; 
-                 margin: 0 auto;
-             } */
-  
-             body { #6aff78
-                 height:100%; 
+             
+             body {
+                 height: 100%; 
              } 
              
              .cen {
@@ -34,18 +27,11 @@
                  top: 50%;
                  left: 50%;
                  transform: translate(-50%, -50%);
-                 /*top: 30%; 
-                 left: 35%; 
-                 margin-top: 0px;
-                 margin-left: 0px; 
-                 width: auto; 
-                 height: auto;*/
                  max-width: 50%;
                  padding: 1rem 2rem;
                  border-radius: 20px;
                  -webkit-backdrop-filter: blur(20px);
                  backdrop-filter: blur(20px);
-                 backgrade-color: rgba(255, 255, 255, 0.4);
                  color: #FF9933;
                  font-weight: bold;
                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,55 +44,29 @@
                  7
                  <h1>GPA Calculator</h1> 
                  <table>  
-                      <T1>  
-                          <tr>  
-                              <th colspan="3">Please enter grade</th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 1.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade1" style="width: 50px;" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid1" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Credit"></th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 2.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade2" style="width: 50px;" step="0.1" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid2" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Credit"></th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 3.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade3" style="width: 50px;" step="0.1" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid3" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Credit"></th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 4.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade4" style="width: 50px;" step="0.1" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid4" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Cradit"></th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 5.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade5" style="width: 50px;" step="0.1" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid5" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Cradit"></th>  
-                          </tr>  
-                          <tr>  
-                               <th style="width: 60px;">Sub 6.</th>  
-                               <th style="width: 90px;"><input size="1" type="number" id="grade6" style="width: 50px;" step="0.1" min="0" max="4" placeholder="Grade"></th>  
-                               <th style="width: 90px;"><input type="number" id="gid6" style="width: 50px;" step="0.1" min="0.5" max="2" placeholder="Cradit"></th>  
-                          </tr>  
-                      </T1> 
-                      <tr> 
-                          <th colspan="3"> 
-                              <button onclick="summit()">Start calculating</button>  
-                          </th> 
-                      </tr> 
-                      <tr>  
-                          <th colspan="2">  
-                              The average grade you received : 
-                          </th>
-                          <th>
-                              <p id="demo">Your GPA is!?</p>  
-                          </th>  
-                      </tr>  
-                  </table>  
+                    <tr>  
+                        <th colspan="3" id="pls">How mara Supject?</th>  
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <p id="ctr"><input  size="1" type="number" id="numtr" style="width: 110px;" placeholder="How mara Supject?"></p>
+                            
+                        </th>
+                    </tr>
+                    <tr> 
+                        <th colspan="3"> 
+                            <p id="butct"><button onclick="ct()">Create a table</button></p>  
+                        </th> 
+                    </tr> 
+                    <tr>  
+                        <th colspan="2" style="width: 150px;">  
+                            The average grade<br> you received : 
+                        </th>
+                        <th style="width: 100px;">
+                            <p id="demo">Your GPA is!?</p>  
+                        </th>  
+                    </tr>  
+                </table>  
              </div>
          </center> 
          <script src="myjava.js"></script> 
